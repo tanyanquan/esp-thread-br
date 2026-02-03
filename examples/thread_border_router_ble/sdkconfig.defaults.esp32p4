@@ -1,0 +1,38 @@
+# ESP32-P4 specific configuration for Thread BR + BLE Example
+
+#
+# Board Configuration
+#
+CONFIG_ESP_BR_BOARD_P4=y
+
+#
+# Console Configuration
+#
+CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y
+
+#
+# Thread BR Auto Start
+#
+CONFIG_OPENTHREAD_BR_AUTO_START=y
+
+#
+# PPP Support (for ESP-Hosted communication)
+#
+CONFIG_LWIP_PPP_SUPPORT=y
+CONFIG_LWIP_PPP_SERVER_SUPPORT=y
+
+#
+# Backbone Network Interface
+#
+CONFIG_EXAMPLE_USE_INTERNAL_ETHERNET=y
+
+#
+# RCP Target
+#
+CONFIG_ESP_BR_C6_TARGET=y
+
+#
+# UART pins to RCP (adjust if your hardware differs)
+#
+CONFIG_PIN_TO_RCP_TX=4
+CONFIG_PIN_TO_RCP_RX=5
